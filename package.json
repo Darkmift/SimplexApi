@@ -10,11 +10,22 @@
         "dev:concurrently": "concurrently \"cross-env NODE_ENV=development\" \"npx tsc --watch\" \"nodemon -q dist/index.js\""
     },
     "dependencies": {
+        "@types/axios": "^0.14.0",
+        "@types/got": "^9.6.12",
+        "@types/joi": "^17.2.3",
+        "@types/request": "^2.48.8",
+        "@types/uuid": "^8.3.4",
+        "axios": "^1.2.0",
         "cors": "^2.8.5",
         "dotenv": "^16.0.3",
         "envalid": "^7.3.1",
         "express": "^4.18.2",
+        "got": "^12.5.3",
+        "joi": "^17.7.0",
         "morgan": "^1.10.0",
+        "node-fetch": "^3.3.0",
+        "request": "^2.88.2",
+        "uuid": "^9.0.0",
         "winston": "^3.8.2",
         "winston-daily-rotate-file": "^4.7.1"
     },
