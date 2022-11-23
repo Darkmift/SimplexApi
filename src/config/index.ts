@@ -1,4 +1,6 @@
 import { config } from 'dotenv';
+import { currencyInitials as CI } from './currencyInitials';
+
 config({
     path: `.env.${process.env.NODE_ENV || 'development'}.local`,
 });
@@ -6,7 +8,7 @@ config({
 type ConfigVars = {
     [key: string]: string;
 };
-
+export const currencyInitials = CI;
 export const CREDENTIALS = process.env.CREDENTIALS === 'true';
 export const {
     NODE_ENV,
